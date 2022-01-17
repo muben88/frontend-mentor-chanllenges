@@ -86,6 +86,7 @@ body {
 }
 
 .plan-price h1 {
+    color: hsl(223, 47%, 23%);
     font-size: 1rem;
     font-weight: 900;
 }
