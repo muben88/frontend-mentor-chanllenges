@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: Outfit, sans-serif;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    width: min(90%, 340px);
+    border-radius: 15px;
+    padding: 1.2rem;
+}
+
+.main-img {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    max-width: 300px;
+}
+
+.big-img {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 10px;
+}
+
+.view-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+}
+
+.main-img:hover .overlay {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.main-img:hover .view-icon {
+    display: block;
+}
+
+.text {
+    margin-top: 20px;
+}
+
+.text h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.text p {
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.price-time {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
+}
+
+.price, .time {
+    display: flex;
+    align-items: center;
+}
+
+.price p, .time p {
+    margin-left: 5px;
+}
+
+.price p {
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+}
+
+.creator {
+    border-top: 1px solid hsl(215, 32%, 27%);
+    display: flex;
+    align-items: center;
+}
+
+.creator img  {
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    width: 50px;
+    margin-top: 20px;
+}
+
+.creator p {
+    display: inline-block;
+    margin: 20px 0 0 10px;
+}
+
+.creator span {
+    color: hsl(0, 0%, 100%);
+}
+
+h1:hover, span:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
