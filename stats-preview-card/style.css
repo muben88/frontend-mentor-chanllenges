@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}   
+
+main {
+    width: min(90%, 375px);
+    margin: 2rem auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: .5rem;
+}
+
+.main-img {
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.mobile {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.desktop {
+    display: none;
+    border-radius: 0 10px 10px 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .4;
+    background-color: hsl(277, 64%, 61%);
+    border-radius: 10px;
+}
+
+.text-and-stats {
+    padding: 2rem;
+    text-align: center;
+}
+
+.main-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-text h1 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 1rem;
+    font-weight: 700;
+} 
+
+.main-text span {
+    color: hsl(277, 64%, 61%);
+}
+
+.main-text p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 100;
+}
+
+.stats {
+    padding: 2rem 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stats h2 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: .1rem;
+}
+
+.stats p {
+    color:  hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+}
+
+.stat {
+    margin-bottom: 2rem;
+}
+
+.stat:last-child {
+    margin-bottom: 0;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+    main {
+        margin: auto;
+        width: 69.3rem;
+      }
+
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .overlay {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .text-and-stats {
+        padding: 4rem;
+        margin-right: 3.4rem;
+        line-height: 1.2;
+        text-align: start;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .main-text p {
+        line-height: 2;
+    }
+
+    .stats {
+        flex-direction: row;
+        text-align: start;
+        margin-top: 2rem;
+    }
+
+    .stat {
+        margin-bottom: 0;
+    }
+}
