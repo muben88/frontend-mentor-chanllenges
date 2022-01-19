@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: min(90%, 375px);
+    margin: 2rem;
+}
+
+.sedans, .suvs, .luxury {
+    padding: 3rem;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: .5rem .5rem 0 0;
+}
+
+.car-icon {
+    margin-bottom: 2rem;
+}
+
+.headings {
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 3rem;
+}
+
+.paragraphs {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+}
+
+.btn {
+    background-color: hsl(0, 0%, 95%);
+    padding: .9rem 3rem;
+    border-style: none;
+    border-radius: 3rem;
+    border: 2px solid transparent;
+}
+
+.btn a {
+    text-decoration: none;
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+}
+
+.sedans a {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suvs a {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.luxury a {
+    color: hsl(179, 100%, 13%);
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+    transition: 300ms ease-in;
+}
+
+.btn:hover > a {
+    color: hsl(0, 0%, 95%);
+    transition: 300ms ease-in;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (min-width: 992px){
+
+    main {
+        height: 100vh;
+    }
+
+    .container {
+        flex-direction: row;
+        width: min(100%, 1100px);
+    }
+
+    .sedans {
+        border-radius: .5rem 0 0 .5rem;
+    }
+    
+    .luxury {
+        border-radius: 0 .5rem .5rem 0;
+    }
+
+    .btn {
+        margin-top: 4rem;
+    }
+}
