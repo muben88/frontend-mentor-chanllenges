@@ -15,7 +15,7 @@ body {
     align-items: center;
     flex-direction:column;
     min-height: 100vh;
-    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-image: url(https://muben88.github.io/frontend-mentor-chanllenges/profile-card-component/images/bg-pattern-top.svg), url(https://muben88.github.io/frontend-mentor-chanllenges/profile-card-component/images/bg-pattern-bottom.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: right 50vw bottom 20vw, left 50vw top 50vh;
 }
