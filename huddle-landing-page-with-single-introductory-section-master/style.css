@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Open Sans';
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+
+nav {
+    width: min(90%, 375px);
+}
+
+nav img {
+    width: 35%;
+    margin: 1.5rem 2rem 1rem 2rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: min(90%, 375px);
+    padding: 2rem;
+    margin-top: .5rem;
+}
+
+.main-img img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.text-and-icons, .text-and-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text-and-btn h1 {
+    color: white;
+    font-family: Poppins;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.text-and-btn p {
+    color: white;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.text-and-btn button {
+    background-color: white;
+    padding: 1rem 1rem;
+    margin-bottom: 3rem;
+    border-style: none;
+    border-radius: 10rem;
+    width: 70%;   
+    color: hsl(257, 40%, 49%);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fab {
+    color: white;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+.fab:last-child {
+    margin-right: 0;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 750px) {
+    body {
+        background-image: url(images/bg-desktop.svg); 
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        padding: 2rem;
+    }
+    
+    nav {
+        width: 100%;
+        margin-bottom: 4rem;
+        margin-left: 2rem;
+    }
+    
+    nav img {
+        width: 15%;
+        margin: 0;
+    }
+    
+    .container {
+        flex-direction: row;
+        width: 100%;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .main-img {
+        width: 120%;
+    }
+    
+    .text-and-icons {
+        padding: 0 4rem 0 1.5rem;
+        margin-left: 2rem;
+    }
+
+    .text-and-btn {
+        align-items: flex-start;
+        text-align: start;
+        margin-bottom: 5rem;
+    }
+    
+    .text-and-btn h1 {
+        margin-bottom: 2rem;
+        padding-right: 8rem;
+    }
+
+    .text-and-btn p {
+        padding-right: 6rem;
+    }
+    
+    .text-and-btn button {
+        width: 40%;   
+    }
+
+    .social-icons {
+        align-self: flex-end;
+        padding-right: 6rem;
+    }
+
+    .text-and-btn button:hover {
+        background-color: hsl(300, 69%, 71%);
+        color: white;
+        cursor: pointer;
+    }
+
+    .fab:hover {
+        color: hsl(300, 69%, 71%);
+        border: 1px solid hsl(300, 69%, 71%);
+        cursor: pointer;
+    }
+}   
