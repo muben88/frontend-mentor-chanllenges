@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 3rem; */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.logo-and-icons {
+    background-color: hsl(228, 56%, 26%);
+    width: 100%;
+    padding: 2rem;
+    border-radius: .5rem 4rem .5rem .5rem;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.icon {
+    background-color: hsl(229, 57%, 11%);
+    width: 50px;
+    height: 50px;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-right: .7rem;
+    margin-top: 2rem;
+}
+
+.icon-1 {
+    background-image: url(images/icon-document.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-2 {
+    background-image: url(images/icon-folder.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-3 {
+    background-image: url(images/icon-upload.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.storage {
+    background-color: hsl(228, 56%, 26%);
+    width: 100%;
+    padding: 2rem;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.headline {
+    color: hsl(243, 100%, 93%);
+    margin-bottom: 1rem;
+}
+
+.headline span {
+    font-weight: 700;
+}
+
+.storage-bar {
+    width: 100%;
+}
+
+.progress2 {
+    padding: .2rem;
+    border-radius: 30px;
+    background: hsl(229, 57%, 11%);  
+}
+
+.progress-bar2 {
+    height: 18px;
+    width: 75%;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+.circle {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background-color: white;
+    float: right;
+    margin: 2px;
+}
+
+.storage-num {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:  hsl(243, 100%, 93%);
+    margin: 1rem 0;
+    font-weight: 700;
+}
+
+.amount-container {
+    display: flex;
+    justify-content: center;
+}
+
+.amount-left {
+    width: 50%;
+    background-color: white;
+    border-radius: .5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -20%;
+    left: 25%;
+}
+
+.amount-left h1 {
+    color: hsl(229, 57%, 11%);
+    margin-right: .5rem;
+}
+
+.amount-left p {
+    color: hsl(229, 7%, 55%);
+    text-transform: uppercase;
+    font-weight: 600;
+    z-index: 2;
+}
+
+@media (min-width:950px) {
+
+    body {
+        background-image: url(images/bg-desktop.png);
+        background-position-y: bottom;
+        background-size: contain;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .container {
+        align-items: flex-end;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 6rem;
+    }
+
+    .logo-and-icons {
+        margin-right: 2rem;
+        border-radius: .5rem 7rem .5rem .5rem;
+        width: 25%;
+    }
+    
+    .storage {
+        width: 40%;
+    }
+
+    .amount-left {
+        width: 30%;
+        height: 35%;
+        top: -25%;
+        left: 63%;
+    }
+    
+    .amount-left::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        margin-bottom: -15%;
+        border-bottom: 35px solid transparent;
+        border-right: 45px solid white;
+        z-index: 1;
+    }
+}
