@@ -1,0 +1,401 @@
+
+:root {
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Open Sans';
+    font-size: 18px;
+}
+
+h1, h2 {
+    font-family: Poppins;
+}
+
+.commun-set {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: min(90%, 375px);
+}
+
+header {
+    background-image: url(images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: hsl(193, 100%, 96%);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 1rem;
+    width: 100%;
+}
+
+nav div {
+    width: 50%;
+}
+
+nav img {
+    width: 70%;
+    float: left;
+}
+
+nav button {
+    background-color: white;
+    width: 70%;
+    padding: .5rem 0;
+    border-radius: 3rem;
+    border-style: none;
+    font-weight: 600;
+    float: right;
+}
+
+.header-text-img {
+    padding: 3rem 2rem 1rem 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-text {
+    margin-bottom: 2rem;
+}
+
+.header-text h1, .header-text p, .header-text button {
+    margin-bottom: 1rem;
+}
+
+.header-text button {
+    width: 80%;
+    padding: 1rem 0;
+    background-color: hsl(322, 100%, 66%);
+    border-style: none;
+    border-radius: 3rem;
+    color: white;
+    font-weight: 600;
+}
+
+.header-img, .header-img img {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+    border-radius: .3rem;
+    box-shadow: 0px 0px 10px rgba(68, 68, 68, 0.6);
+    margin-bottom: 2rem;
+}
+
+.section-img, .section-img img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.section-text {
+    width: 100%;
+}
+
+.section-text h2 {
+    margin-bottom: 1rem;
+}
+
+.section-text p {
+    color: hsl(208, 11%, 55%);
+}
+
+.floating-section {
+    background-color: white;
+    text-align: center;
+    width: 90%;
+    padding: 2rem 0;
+    position: relative;
+    bottom: -4rem;
+    border-radius: 1rem;
+    box-shadow: 0px -1px .5rem rgba(68, 68, 68, 0.6);
+}
+
+.floating-section button {
+    width: 60%;
+    padding: 1rem 0;
+    border-radius: 3rem;
+    border-style: none;
+    margin-top: 1rem;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    font-weight: 600;
+    box-shadow: 0px 1px .5rem rgba(68, 68, 68, 0.6);
+}
+
+footer {
+    padding: 7rem 1rem 2rem 1rem;
+    background-color: hsl(192, 100%, 9%);
+}
+
+.location, .phone, .email, .footer-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.f-logo {
+    display: inline-block;
+    width: 70%;
+    height: 70px;
+    background-size: 90%;
+    background-repeat: no-repeat;
+  }
+.icon-f-logo {
+    background-image: url(images/logo.svg);
+    filter: invert(88%) sepia(100%) saturate(0%) hue-rotate(353deg) brightness(108%) contrast(102%);
+}
+
+.location img, .phone img, .email img {
+    margin-right: 1rem;
+}
+
+.links {
+    width: 100%;
+}
+
+.links a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-top: 1rem;
+}
+
+.social-icons {
+    margin: 2rem 0 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons div {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.social-icons div:last-child {
+    margin-right: 0;
+}
+
+.social-icons i {
+    color: white;
+}
+
+.copyrights {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: .8rem;
+}
+
+
+.attribution { font-size: 11px; text-align: center; margin: .5rem 0;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+
+
+
+
+@media (min-width: 750px) {
+    .commun-set {
+        width: 100%;
+    }
+
+    header {
+        background-image: url(images/bg-hero-desktop.svg);
+    }
+    
+    nav {
+        padding: 2rem;
+    }
+ 
+   
+    nav img {
+        width: 30%;
+    }
+
+    nav button {
+        width: 30%;
+        padding: 1rem 0;
+        box-shadow: 0px 1px .2rem rgba(68, 68, 68, 0.6);
+    }
+
+    .header-text-img {
+        flex-direction: row;
+        text-align: start;
+    }
+    
+    .header-text {
+        margin-bottom: 2rem;
+        width: 80%;
+    }
+    
+    .header-text button {
+        width: 50%;
+        padding: 1.2rem 0;
+        margin-top: 1rem;
+    }
+    
+    .container {
+        padding: 6rem;
+    }
+    
+    .section {
+        justify-content: space-between;
+        flex-direction: row;
+        text-align: start;
+    }
+    
+    .section-img, .section-img img {
+        width: 70%;
+        margin: 0;
+    }
+    
+    .section-text {
+        padding: 4rem;
+    }
+
+    .text1, .text3 {
+        order: 1;
+    }
+
+    .img1, .img3 {
+        order: 2;
+        float: right;
+    }
+
+    .floating-section {
+        width: 50%;
+        padding: 3rem 0;
+    }
+    
+    .floating-section button {
+        width: 50%;
+        padding: 1.4rem 0;
+        margin-top: 2rem;
+    }
+    
+    .desktop-view {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        padding: 7rem 4rem 1rem 4rem;
+    }
+
+    .logo-text-tel-email {
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .links {
+        width: 100%;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin: 0 5rem;
+    }
+
+    .social-icons {
+        width: 100%;
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .copyrights {
+        width: 100%;
+        grid-column: 3/4;
+    }
+
+    .f-logo {
+        width: 50%;
+      }
+    
+     .social-icons {
+        margin: 0;
+    }
+    
+    .links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .link2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .link3 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    button:hover {
+        cursor: pointer;
+        opacity: .7;
+        transition: .3s;
+    }
+
+    .links a:hover {
+        text-decoration: underline;
+    }
+
+    .social-icons i:hover {
+        cursor: pointer;
+        color: hsl(322, 100%, 66%);
+        transition: .4s;
+    }
+
+    .social-icons div:hover {
+        border-color: hsl(322, 100%, 66%);
+        transition: .4s;
+    }
+}
