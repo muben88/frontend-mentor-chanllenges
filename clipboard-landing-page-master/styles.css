@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 17px;
+}
+
+h1, h2 {
+    color: hsl(210, 10%, 33%);
+}
+
+p {
+    color: hsl(201, 11%, 66%);
+}
+
+.commun-set {
+    width: min(90%, 375px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header {
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding: 5rem 2rem;
+}
+
+.logo-img, .header-text {
+    margin-bottom: 3rem;
+}
+
+.header-text h1 {
+    margin-bottom: 1rem;
+}
+
+.header-btn, .fs-btn {
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    padding: 1.2rem 0;
+    border-radius: 3rem;
+    border-style: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.ios-btn {
+    background-color: hsl(171, 66%, 44%);
+    margin-bottom: 1rem;
+    border-bottom: 3px solid hsl(171, 95%, 26%);
+}
+
+.mac-btn {
+    background-color: hsl(233, 100%, 69%);
+    border-bottom: 3px solid hsl(233, 70%, 51%);
+}
+
+.container {
+    padding: 5rem 2rem;
+}
+
+.fs-m-text h1, .fs-m-text p, 
+.ss-m-text h1, .ss-m-text p,
+.ts-m-text h1, .ts-m-text p {
+    margin-bottom: 1rem;
+}
+
+.mac-pc-img img, .phone-tablet-img img {
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.fs-s-text h2 {
+    margin-bottom: 1rem;
+}
+
+.fs-s-text p {
+    margin-bottom: 2.5rem;
+}
+
+.blacklists {
+    margin: 4rem 0 2rem 0;
+}
+
+.blacklists-snippets-preview img {
+    margin-bottom: 2rem;
+}
+
+.blacklists-snippets-preview h2 {
+    margin-bottom: 1.5rem;
+}
+
+.blacklists-snippets-preview p {
+    margin-bottom: 3rem;
+}
+
+.fourth-section {
+    margin: 2rem 0;
+}
+
+.fourth-section img {
+    display: block;
+    margin-bottom: 4rem;
+}
+
+.fifth-section {
+    margin: 4rem 0;
+}
+
+.fs-btn {
+    margin-top: 3rem;
+}
+
+footer {
+    background-color: hsl(0, 0%, 92%);
+    padding: 3rem 2rem 0 2rem;
+}
+
+.logo-and-links, .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo-and-links img {
+    display: block;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+.logo-and-links a {
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+    margin: .5rem 0;
+}
+
+.social-icons {
+    margin-top: 2rem;
+}
+
+.social-icons img {
+    margin-right: 2rem;
+}
+
+.social-icons img:last-child {
+    margin-right: 0;
+}
+
+footer .frontendmentor-footer {
+    padding: 0;
+    margin: 3rem 0 1rem 0;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+@media (min-width:750px) {
+
+    body {
+        font-size: 18px;
+    }
+    .commun-set {
+        width: 100%;
+    }
+
+    .header {
+        background-image: url(images/bg-header-desktop.png);
+    }
+
+    .logo-img img {
+        width: 70%;
+        margin-top: 2rem;
+    }
+
+    .header-text, .fs-m-text, .ss-m-text {
+        padding: 0 20rem;
+    }
+
+    button {
+        width: 20%;
+        margin: 0 .5rem;
+    }
+    
+    button:hover {
+        opacity: .8;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    .macpc-and-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 4rem;
+    }
+
+    .fs-s-text {
+        text-align: left;
+        padding: 0 4rem;
+    }
+
+    .mac-pc-img {
+        position: relative;
+        left: -5%;
+    }
+
+    .phone-tablet-img img {
+        width: 70%;
+        margin-bottom: 4rem;
+    }
+
+    .bsp-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        margin: 4rem 0;
+    }
+    .bsp-container div {
+        width: 30%;
+    }
+    .blacklists {
+        margin: 0;
+    }
+
+    .fourth-section {
+        padding: 0 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .footer-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    
+    .logo-and-links {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        text-align: start;
+    }
+    
+    .logo-and-links img {
+        width: 7%;
+        margin: 0 4rem;
+    }
+    
+    .logo-and-links a {
+        margin-right: 3rem;
+        text-align: start;
+    }
+
+    .social-icons {
+        margin: 0 3rem;
+    }
+
+    .social-icons img:hover {
+        cursor: pointer;
+    }
+
+    .links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .links a:hover {
+        color: hsl(171, 66%, 44%);
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    .item2 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .item5 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+}
