@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Live Site URL: [Solution](https://muben88.github.io/frontend-mentor-chanllenges/faq-accordion-card)
-- Solution Repo: [Repo](https://github.com/muben88/frontend-mentor-chanllenges/faq-accordion-card)
+- Solution Repo: [Repo](https://github.com/muben88/frontend-mentor-chanllenges/tree/gh-pages/faq-accordion-card)
 
 ## My process
 
