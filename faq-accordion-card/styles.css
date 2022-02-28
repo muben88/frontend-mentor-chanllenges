@@ -43,7 +43,7 @@ main {
     max-width: 30rem;
     border-radius: 1rem;
     padding: 0rem 2rem;
-    background-image: url(/images/bg-pattern-mobile.svg);
+    background-image: url(images/bg-pattern-mobile.svg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 65%;
@@ -134,7 +134,7 @@ h2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding-left: 0;
-        background-image: url(/images/bg-pattern-desktop.svg);
+        background-image: url(images/bg-pattern-desktop.svg);
         background-position: left -35rem center;
         background-size: 100%;
     }
