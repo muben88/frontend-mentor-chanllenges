@@ -129,6 +129,10 @@ h2 {
 
 
 @media (min-width: 1010px) {
+    main {
+        padding: 2rem;
+    }
+    
     .card-container {
         max-width: 60rem;
         display: grid;
