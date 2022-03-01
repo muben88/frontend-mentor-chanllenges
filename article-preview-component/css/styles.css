@@ -127,7 +127,7 @@ h1 {
     display: none;
     background-color: var(--very_dark_grayish_blue);
     position: absolute;
-    top: 18.27rem;
+    bottom: 0;
 }
 
 .social_icons {
