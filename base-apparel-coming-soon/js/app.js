@@ -33,5 +33,6 @@ button.addEventListener('click', (e) => {
         input.classList.add('border_success');
         errorIcon.style.display = 'none';
         newPara.append(message);
+        input.value = '';
     }
 })
