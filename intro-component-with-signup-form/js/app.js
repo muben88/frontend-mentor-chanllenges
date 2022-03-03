@@ -16,7 +16,7 @@ const errorMsg = document.createElement('p');
 btn.addEventListener('click', (e) => {
     e.preventDefault();
 
-    if (firstName.value === '') {
+    if (firstName.value.trim() === '') {
         errorMsg.textContent = 'First Name cannot be empty';
 
         lastName.classList.remove('input_margin');
@@ -33,7 +33,7 @@ btn.addEventListener('click', (e) => {
         errorMsg.classList.add('error_msg', 'first_name_err_msg');
         form.append(errorMsg);
     } 
-    else if (lastName.value === '') {
+    else if (lastName.value.trim() === '') {
         errorMsg.textContent = 'Last Name cannot be empty';
 
         firstName.classList.remove('input_margin');
@@ -65,7 +65,7 @@ btn.addEventListener('click', (e) => {
         errorMsg.classList.add('error_msg', 'email_err_msg');
         form.append(errorMsg);
     }
-    else if (password.value === '') {
+    else if (password.value.trim() === '') {
         errorMsg.textContent = 'Password cannot be empty';
 
         firstName.classList.remove('input_margin');
