@@ -1,0 +1,90 @@
+:root {
+    --light_cyan: hsl(193, 38%, 86%);
+    --neon_green: hsl(150, 100%, 66%);
+    --grayish_blue: hsl(217, 19%, 38%);
+    --dark_grayish_blue: hsl(217, 19%, 24%);
+    --dark_blue: hsl(218, 23%, 16%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 28px;
+    background-color: var(--dark_blue);
+    color: var(--light_cyan);
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 14rem;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--dark_grayish_blue);
+    padding: 2rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.advice_num {
+    color: var(--neon_green);
+    font-size: 1rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+}
+
+.quote {
+    font-weight: 600;
+    margin: 2rem 0;
+}
+
+.divider {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    position: absolute;
+    bottom: -2.2rem;
+    padding: 1.5rem;
+    border-radius: 50%;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neon_green);
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 2rem 1px var(--neon_green);
+    transition: .2s ease-out;
+}
+
+.error {
+    color: red;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 750px) {
+    .container {
+        max-width: 34rem;
+    }
+}
