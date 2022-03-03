@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
     --red: hsl(0, 100%, 74%);
@@ -29,7 +29,7 @@ main {
     width: 100%;
     max-width: 30rem;
     padding: 2rem;
-    background-image: url(/images/bg-intro-mobile.png);
+    background-image: url(https://muben88.github.io/frontend-mentor-chanllenges/intro-component-with-signup-form/images/bg-intro-mobile.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -196,7 +196,7 @@ form {
     .container {
         max-width: 100%;
         padding: 4rem 6rem;
-        background-image: url(/images/bg-intro-desktop.png);
+        background-image: url(https://muben88.github.io/frontend-mentor-chanllenges/intro-component-with-signup-form/images/bg-intro-desktop.png);
         display: flex;
         justify-content: space-between;
         align-items: center;
