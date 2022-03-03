@@ -10,13 +10,13 @@ btn.addEventListener('click', (e) => {
 
     if (input.value.trim() === '' || !input.value.match(pattern)){
         errMsg.textContent = 'Please provide a valid email address';
-        btn.classList.add('margin');
+        input.classList.add('margin');
         errMsg.classList.remove('success');
         errMsg.classList.add('error');
         form.append(errMsg);
     } else {
         errMsg.textContent = 'Thank you! We will notify you when we launch!';
-        btn.classList.add('margin');
+        input.classList.add('margin');
         errMsg.classList.remove('error');
         errMsg.classList.add('success');
         form.append(errMsg);
