@@ -31,6 +31,11 @@ const url = 'https://muben88.github.io/frontend-mentor-chanllenges/time-tracking
 
 // daily info
 daily.addEventListener('click', () => {
+    
+    daily.classList.add('active');
+    weekly.classList.remove('active');
+    monthly.classList.remove('active');
+    
     fetch(url)
         .then(response => response.json())
         .then(data => {
@@ -65,6 +70,11 @@ daily.addEventListener('click', () => {
 
 // weekly info
 weekly.addEventListener('click', () => {
+    
+    weekly.classList.add('active');
+    daily.classList.remove('active');
+    monthly.classList.remove('active');
+    
     fetch(url)
         .then(response => response.json())
         .then(data => {
@@ -99,6 +109,11 @@ weekly.addEventListener('click', () => {
 
 // monthly info
 monthly.addEventListener('click', () => {
+    
+    monthly.classList.add('active');
+    weekly.classList.remove('active');
+    daily.classList.remove('active');
+    
     fetch(url)
         .then(response => response.json())
         .then(data => {
