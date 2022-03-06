@@ -215,9 +215,9 @@ main {
     transition: .1s ease-out;
 }
 
-
-
-
+.active {
+    color: #ffffff !important;
+}
 
 
 @media (min-width: 950px) {
