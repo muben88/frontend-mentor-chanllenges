@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+<body>
+  <main>
+    <div class="container">
+
+     <div class="person">
+        <div class="info">
+          <img src="/images/image-jeremy.png" alt="profile image">
+          <p><span>Report for</span> Jeremy Robson</p>
+        </div>
+        <div class="schedule">
+          <p class="daily">Daily</p>
+          <p class="weekly">Weekly</p>
+          <p class="monthly">Monthly</p>
+        </div>
+      </div>
+
+      <div class="work item0 common-set">
+        <div class="bg bg-work"></div>
+        <div class="details">
+          <div>
+            <p class="activity-name">Work</p>
+            <img src="/images/icon-ellipsis.svg" alt="ellipsis icon" class="ellipse-icon">
+          </div>
+          <div class="section-desktop">
+            <p class="hours" id="work-curr">32hrs</p>
+            <p class="previous-hrs" id="work-prev">Previous - 36hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="play item1 common-set">
+        <div class="bg bg-play"></div>
+        <div class="details">
+          <div>
+            <p class="activity-name">Play</p>
+            <img src="/images/icon-ellipsis.svg" alt="ellipsis icon" class="ellipse-icon">
+          </div>
+          <div class="section-desktop">
+            <p class="hours" id="play-curr">10hrs</p>
+            <p class="previous-hrs" id="play-prev">Previous - 8hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="study item2 common-set">
+        <div class="bg bg-study"></div>
+        <div class="details">
+          <div>
+            <p class="activity-name">Study</p>
+            <img src="/images/icon-ellipsis.svg" alt="ellipsis icon" class="ellipse-icon">
+          </div>
+          <div class="section-desktop">
+            <p class="hours" id="study-curr">4hrs</p>
+            <p class="previous-hrs" id="study-prev">Previous - 7hrs</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="exercise item3 common-set">
+        <div class="bg bg-exercise"></div>
+        <div class="details">
+          <div>
+            <p class="activity-name">Exercise</p>
+            <img src="/images/icon-ellipsis.svg" alt="ellipsis icon" class="ellipse-icon">
+          </div>
+          <div class="section-desktop">
+            <p class="hours" id="exercise-curr">4hrs</p>
+            <p class="previous-hrs" id="exercise-prev">Previous - 5hrs</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="social item4 common-set">
+        <div class="bg bg-social"></div>
+        <div class="details">
+          <div>
+            <p class="activity-name">Social</p>
+            <img src="/images/icon-ellipsis.svg" alt="ellipsis icon" class="ellipse-icon">
+          </div>
+          <div class="section-desktop">
+            <p class="hours" id="social-curr">5hrs</p>
+            <p class="previous-hrs" id="social-prev">Previous - 10hrs</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="self-care item5 common-set">
+        <div class="bg bg-self-care"></div>
+        <div class="details">
+          <div>
+            <p class="activity-name">Self Care</p>
+            <img src="/images/icon-ellipsis.svg" alt="ellipsis icon" class="ellipse-icon">
+          </div>
+          <div class="section-desktop">
+            <p class="hours" id="self-care-curr">2hrs</p>
+            <p class="previous-hrs" id="self-care-prev">Previous - 2hrs</p>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+  </main>
+
+  
+  <script src="app.js"></script>
+</body>
+</html>
