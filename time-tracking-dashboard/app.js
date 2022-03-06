@@ -26,9 +26,12 @@ const socialPrev = document.querySelector('#social-prev');
 const selfCareCurr = document.querySelector('#self-care-curr');
 const selfCarePrev = document.querySelector('#self-care-prev');
 
+// Data link
+const url = 'https://muben88.github.io/frontend-mentor-chanllenges/time-tracking-dashboard/data.json';
+
 // daily info
 daily.addEventListener('click', () => {
-    fetch('/data.json')
+    fetch(url)
         .then(response => response.json())
         .then(data => {
             const workObj = data[0].timeframes.daily;
@@ -62,7 +65,7 @@ daily.addEventListener('click', () => {
 
 // weekly info
 weekly.addEventListener('click', () => {
-    fetch('/data.json')
+    fetch(url)
         .then(response => response.json())
         .then(data => {
             const workObj = data[0].timeframes.weekly;
@@ -96,7 +99,7 @@ weekly.addEventListener('click', () => {
 
 // monthly info
 monthly.addEventListener('click', () => {
-    fetch('/data.json')
+    fetch(url)
         .then(response => response.json())
         .then(data => {
             const workObj = data[0].timeframes.monthly;
