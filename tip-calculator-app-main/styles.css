@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+:root {
+    --strong_cyan: hsl(172, 67%, 45%); 
+    --very_dark_cyan: hsl(183, 100%, 15%);
+    --dark_grayish_cyan: hsl(186, 14%, 43%);
+    --grayish_cyan: hsl(184, 14%, 56%);
+    --light_grayish_cyan: hsl(185, 41%, 84%);
+    --very_light_grayish_cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Mono', sans-serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--light_grayish_cyan);
+    padding: 2rem 0;
+}
+
+.header-logo, main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo img {
+    width: 20%;
+    padding: 2rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 30rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.bill-input, .tip-percentage, .num-people {
+    margin-bottom: 2rem;
+}
+
+.bill-input label, .tip-percentage p, .num-people label {
+    display: block;
+    color: var(--dark_grayish_cyan);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.bill-input input, .num-people input {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--very_light_grayish_cyan);
+    border-style: none;
+    border-radius: .2rem;
+    text-align: right;
+    font-family: 'Space Mono';
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-indent: 2rem;
+    direction: rtl;
+    border: 1px solid var(--very_light_grayish_cyan);
+}
+
+.bg {
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-position: left 1rem center;
+}
+
+.bill-input input {
+    background-image: url(/images/icon-dollar.svg);
+}
+
+.num-people input {
+    background-image: url(/images/icon-person.svg);
+}
+
+.tip-choices {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 12rem);
+    grid-template-rows: repeat(3, 3rem);
+    gap: 1rem;
+}
+
+.tip-choices button {
+    background-color: var(--very_dark_cyan);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-style: none;
+    border-radius: .5rem;
+}
+
+.tip-choices input {
+    background-color: var(--very_light_grayish_cyan);
+    text-align: right;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-style: none;
+    border-radius: .5rem;
+    text-indent: 1rem;
+    direction: rtl;
+}
+
+.tip-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.tip-2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.tip-3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.tip-4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.tip-5 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.tip-percentage input {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-family: 'Space Mono';
+}
+
+.results {
+    width: 100%;
+    background-color: var(--very_dark_cyan);
+    padding: 2rem;
+    border-radius: .5rem;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.tip-amount, .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.tip-title {
+    font-size: 1rem;
+}
+.tip-title span {
+    display: block;
+    color: var(--dark_grayish_cyan);
+    font-size: .9rem;
+    font-weight: 700;
+    margin-top: .5rem;
+}
+
+.person-tip, .total-tip {
+    color: var(--strong_cyan);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.reset-btn {
+    width: 100%;
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-style: none;
+    border-radius: .2rem;
+    color: var(--very_dark_cyan);
+    background-color: var(--strong_cyan);
+}
+
+
+.disabled-btn {
+    background-color: var(--dark_grayish_cyan);
+    pointer-events: none;
+}
+
+/* active states: */
+
+.tip-choices button:hover {
+    cursor: pointer;
+    background-color: var(--light_grayish_cyan);
+    color: var(--very_dark_cyan);
+    transition: .2s ease-out;
+}
+
+input:hover {
+    cursor: pointer;
+    border: 1px solid var(--strong_cyan);
+}
+
+.reset-btn:hover {
+    cursor: pointer;
+    color: var(--very_dark_cyan);
+    background-color: var(--light_grayish_cyan);
+    transition: .2s ease-out;
+}
+
+.active {
+    background-color: var(--strong_cyan) !important;
+    color: var(--very_dark_cyan) !important;
+}
+
+.num-people {
+    position: relative;
+}
+
+.error {
+    display: none;
+    color: rgb(250, 76, 76);
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 750px) {
+    .container {
+        max-width: 56rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .num-people {
+        margin-bottom: 0;
+    }
+    
+    .header-logo img {
+        width: 12%;
+    }
+
+    .tip-choices {
+        grid-template-columns: repeat(3, 8rem);
+        grid-template-rows: repeat(2, 3rem);
+    }
+
+    .tip-3 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .tip-4 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .tip-5 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .tip-percentage input {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+}

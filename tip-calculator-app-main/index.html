@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+
+  <header class="header-logo">
+    <img src="images/logo.svg" alt="logo">
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="details-input">
+        <div class="bill-input">
+          <label for="bill">Bill</label>
+          <input type="text" name="bill" id="bill" class="bg" placeholder="0">
+        </div>
+        <div class="tip-percentage">
+          <p>Select Tip %</p>
+          <div class="tip-choices">
+            <button class="tip-1" value="5">5%</button>
+            <button class="tip-2" value="10">10%</button>
+            <button class="tip-3" value="15">15%</button>
+            <button class="tip-4" value="25">25%</button>
+            <button class="tip-5" value="50">50%</button>
+            <input type="text" name="custom-tip" id="custom-tip" placeholder="Custom">
+          </div>
+        </div>
+        <div class="num-people">
+          <label for="number_of_people">Number of People</label>
+          <input type="text" name="number_of_people" id="number_of_people" class="bg" placeholder="0">
+          <p class="error">Can't be zero</p>
+        </div>
+      </div>
+
+      <div class="results">
+        <div>
+          <div class="tip-amount">
+            <p class="tip-title">Tip Amount <span>/ person</span></p>
+            <p class="person-tip">$0.00</p>
+          </div>
+          <div class="total">
+            <p class="tip-title">Total <span>/ person</span></p>
+            <p class="total-tip">$0.00</p>
+          </div>
+        </div>
+        <button class="reset-btn">RESET</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
