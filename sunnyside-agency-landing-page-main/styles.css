@@ -43,7 +43,7 @@ header, main, footer {
 
 header {
     height: 36rem;
-    background-image: url(/images/mobile/image-header.jpg);
+    background-image: url(images/mobile/image-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 2rem;
@@ -177,10 +177,10 @@ nav ul li .contact {
 }
 
 .bg-1 {
-    background-image: url(/images/mobile/image-transform.jpg);
+    background-image: url(images/mobile/image-transform.jpg);
 }
 .bg-2 {
-    background-image: url(/images/mobile/image-stand-out.jpg);
+    background-image: url(images/mobile/image-stand-out.jpg);
 }
 
 .section-text {
@@ -231,12 +231,12 @@ nav ul li .contact {
 }
 
 .graphic-des {
-    background-image: url(/images/mobile/image-graphic-design.jpg);
+    background-image: url(images/mobile/image-graphic-design.jpg);
     color: var(--dark_desaturated_cyan) !important;
 }
 
 .photography {
-    background-image: url(/images/mobile/image-photography.jpg);
+    background-image: url(images/mobile/image-photography.jpg);
     color: var(--dark_blue) !important;
 }
 
@@ -304,16 +304,16 @@ nav ul li .contact {
 }
 
 .gallery-img1 {
-    background-image: url(/images/mobile/image-gallery-milkbottles.jpg);
+    background-image: url(images/mobile/image-gallery-milkbottles.jpg);
 }
 .gallery-img2 {
-    background-image: url(/images/mobile/image-gallery-orange.jpg);
+    background-image: url(images/mobile/image-gallery-orange.jpg);
 }
 .gallery-img3 {
-    background-image: url(/images/mobile/image-gallery-cone.jpg);
+    background-image: url(images/mobile/image-gallery-cone.jpg);
 }
 .gallery-img4 {
-    background-image: url(/images/mobile/image-gallery-sugar-cubes.jpg);
+    background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
 }
 
 
@@ -384,7 +384,7 @@ button:hover, .hamburger-menu img:hover {
     
     header {
         height: 45rem;
-        background-image: url(/images/desktop/image-header.jpg);
+        background-image: url(images/desktop/image-header.jpg);
     }
     
     .nav {
@@ -418,10 +418,10 @@ button:hover, .hamburger-menu img:hover {
     }
 
     .bg-1 {
-        background-image: url(/images/desktop/image-transform.jpg);
+        background-image: url(images/desktop/image-transform.jpg);
     }
     .bg-2 {
-        background-image: url(/images/desktop/image-stand-out.jpg);
+        background-image: url(images/desktop/image-stand-out.jpg);
     }
 
     .section-text {
@@ -501,16 +501,16 @@ button:hover, .hamburger-menu img:hover {
     } 
 
     .gallery-img1 {
-        background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
+        background-image: url(images/desktop/image-gallery-milkbottles.jpg);
     }
     .gallery-img2 {
-        background-image: url(/images/desktop/image-gallery-orange.jpg);
+        background-image: url(images/desktop/image-gallery-orange.jpg);
     }
     .gallery-img3 {
-        background-image: url(/images/desktop/image-gallery-cone.jpg);
+        background-image: url(images/desktop/image-gallery-cone.jpg);
     }
     .gallery-img4 {
-        background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
+        background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
     }
     
     .footer-logo img{
