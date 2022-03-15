@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+<body>
+
+  <main>
+    <div class="main-title">
+      <div class="title">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </div>
+    </div>
+    <div class="content">
+
+      <div class="plan">
+        <p class="pageviews"><span id="pageviews">100k</span> Pageviews</p>
+        <div class="slide-container">
+          <input type="range" class="slider" min="0" max="100" value="50">
+        </div>
+        <p class="monthly-price"><span class="price">$16.00</span><span class="monthly">/month</span></p>
+        <div class="plan-switch">
+          <p>Monthly Billing</p>
+          <div class="switch-btn">
+            <label class="switch">
+              <input type="checkbox" class="checkbox">
+              <span class="switch-slider round"></span>
+            </label>
+          </div>
+          <div>
+            <p>Yearly Billing <span class="discount">-25% <span class="show-desktop">discount</span></span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="benefits">
+        <div>
+          <div class="service">
+            <img src="/images/icon-check.svg" alt="check sign image">
+            <p>Unlimited websites</p>
+          </div>
+          <div class="service">
+            <img src="/images/icon-check.svg" alt="check sign image">
+            <p>100% data ownership</p>
+          </div>
+          <div class="service">
+            <img src="/images/icon-check.svg" alt="check sign image">
+           <p>Email reports</p>
+          </div>
+        </div>
+        <div>
+          <button class="cta-btn">Start my trial</button>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  
+
+  <script src="app.js"></script>
+</body>
+</html>
