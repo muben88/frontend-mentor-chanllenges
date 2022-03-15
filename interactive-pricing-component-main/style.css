@@ -40,7 +40,7 @@ main {
 
 .main-title {
     width: 100%;
-    background-image: url(/images/bg-pattern.svg);
+    background-image: url(images/bg-pattern.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -49,7 +49,7 @@ main {
 
 .title {
     text-align: center;
-    background-image: url(/images/pattern-circles.svg);
+    background-image: url(images/pattern-circles.svg);
     background-repeat: no-repeat;
     background-position: center;
     padding: 3rem 0;
@@ -118,7 +118,7 @@ main {
     width: 2.2rem;
     height: 2.2rem;
     background: var(--strong_cyan);
-    background-image: url(/images/icon-slider.svg);
+    background-image: url(images/icon-slider.svg);
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
