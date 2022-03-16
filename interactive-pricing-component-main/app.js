@@ -35,10 +35,16 @@ slider.addEventListener("input", () => {
 switchBtn.addEventListener('input', () => {
     const currentValue = slider.value;
     if (switchBtn.checked) {
+        if (currentValue === 0){
+        monthlyPrice.textContent = `$1.00/year`;
+        }
         monthlyYearly.textContent = '/year';
         monthlyPrice.textContent = `$${yearlyCalculator(currentValue)}.00`;
     }
     if (!switchBtn.checked) {
+        if (currentValue === 0){
+        monthlyPrice.textContent = `$1.00/month`;
+        }
         monthlyYearly.textContent = '/month';
         monthlyPrice.textContent = `$${monthlyCalculator(currentValue)}.00`;
     }
