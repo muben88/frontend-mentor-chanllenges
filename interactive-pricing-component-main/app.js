@@ -5,64 +5,41 @@ const monthlyPrice = document.querySelector('.price');
 const monthlyYearly = document.querySelector('.monthly');
 
 
-const monthPriceCalculator = () => {
-    const value = slider.value;
-    if (value <= 20){
-        monthlyPrice.textContent = '$8.00';
-        pageviews.textContent = '80k';
-    }
-
-    if (value > 20 && value <= 50) {
-        monthlyPrice.textContent = '$16.00';
-        pageviews.textContent = '100k';
-    }
-
-    if (value > 50) {
-        monthlyPrice.textContent = '$32.00';
-        pageviews.textContent = '140k';
-    }
+const monthlyCalculator = (curr) => {
+    return Math.floor(curr / 3.125);
 }
 
-const yearPriceCalculator = () => {
-    const value = slider.value;
-    if (value <= 20){
-        monthlyPrice.textContent = '$6.00';
-        pageviews.textContent = '80k';
-    }
-
-    if (value > 20 && value <= 50) {
-        monthlyPrice.textContent = '$12.00';
-        pageviews.textContent = '100k';
-    }
-
-    if (value > 50) {
-        monthlyPrice.textContent = '$24.00';
-        pageviews.textContent = '140k';
-    }
+const yearlyCalculator = (curr) => {
+    return Math.floor(monthlyCalculator(curr) - monthlyCalculator(curr) * 25 / 100);
 }
 
+const pageviewsCal = (curr) => {
+    return Math.floor(100 * (monthlyCalculator(curr) / 16));
+}
 
 slider.addEventListener("input", () => {
     const currentValue = slider.value;
     const currentColor = `linear-gradient(90deg, var(--soft_cyan) ${currentValue}%, var(--light_grayish_blue) ${currentValue}%)`;
     slider.style.background = currentColor;
+    
+    pageviews.textContent = `${pageviewsCal(currentValue)}K`;
 
     if (switchBtn.checked) {
-        yearPriceCalculator();
+        monthlyPrice.textContent = `$${yearlyCalculator(currentValue)}.00`;
     }
-
     if (!switchBtn.checked) {
-        monthPriceCalculator();
+        monthlyPrice.textContent = `$${monthlyCalculator(currentValue)}.00`;
     }
 });
 
 switchBtn.addEventListener('input', () => {
+    const currentValue = slider.value;
     if (switchBtn.checked) {
         monthlyYearly.textContent = '/year';
-        yearPriceCalculator();
+        monthlyPrice.textContent = `$${yearlyCalculator(currentValue)}.00`;
     }
     if (!switchBtn.checked) {
         monthlyYearly.textContent = '/month';
-        monthPriceCalculator();
+        monthlyPrice.textContent = `$${monthlyCalculator(currentValue)}.00`;
     }
 })
