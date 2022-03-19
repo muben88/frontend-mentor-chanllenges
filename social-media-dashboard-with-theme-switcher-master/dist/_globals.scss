@@ -1,0 +1,66 @@
+body, 
+.first_section, 
+.second_section,
+.title_and_toggle,
+.facebook_followers,
+.twitter_followers,
+.instagram_followers,
+.yt_followers,
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main, 
+.container, 
+.bg_top, 
+.first_section,
+.second_section, 
+.title,
+.title_and_toggle,
+.toggle_btn, 
+.followers_count,
+.facebook_followers,
+.twitter_followers,
+.instagram_followers,
+.yt_followers,
+.social_med_stats,
+.item,
+.item_top,
+.item_bottom {
+    width: 100%;
+}
+
+.toggle_btn,
+.today_count,
+.profile_name,
+.item_top,
+.item_bottom,
+.grow_percentage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.facebook_followers,
+.twitter_followers,
+.instagram_followers,
+.yt_followers,
+.item {
+    padding: 2rem;
+    background-color: $dark_theme_card_bg;
+    border-radius: .3rem;
+    margin: 1rem 0;
+}
+
+.profile_name,
+.count {
+    margin-bottom: 1rem;
+}
+
+@mixin card_border($color) {
+    border-top: 4px solid $color;
+}

@@ -1,0 +1,228 @@
+@import 'variables';
+@import 'globals';
+@import 'light_theme_set';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: $dark_theme_bg;
+}
+
+.bg_top {
+    height: 16rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+    background-color: $dark_theme_top-bg;
+}
+
+.first_section {
+    position: relative;
+    top: -14rem;
+    color: $dark_theme_text;
+}
+
+.title_and_toggle {
+    padding: 0 2rem;
+}
+
+.title {
+    border-bottom: 1px solid $dark_theme_text;
+
+    h1 {
+        color: $white;
+    }
+
+    p {
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.toggle_btn {
+    margin: 1.5rem 0;
+
+    p {
+        font-weight: 700;
+    }
+    label {
+        position: relative;
+        display: inline-block;
+        width: 4rem;
+        height: 2rem;
+    }
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    span {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(90deg, $toggle_gradient_left, $toggle_gradient_right);
+        -webkit-transition: .4s;
+        transition: .4s;
+        border-radius: 4rem;
+    }
+    span::before {
+        border-radius: 50%;
+        position: absolute;
+        content: "";
+        height: 1.5rem;
+        width: 1.5rem;
+        left: .25rem;
+        bottom: .25rem;
+        background: $dark_theme_bg;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    input:checked + span {
+        background: $light_theme_light_text;
+    }
+      
+      input:checked + span:before {
+        -webkit-transform: translateX(2rem);
+        -ms-transform: translateX(2rem);
+        transform: translateX(2rem);
+      }
+}
+
+.followers_count {
+    padding: 0 2rem;
+}
+
+.facebook_followers {
+    @include card_border($facebook);
+}
+
+.profile_name {
+    img {
+        margin-right: .5rem;
+        width: 1.5rem;
+    }
+
+    p {
+        display: inline-block;
+        font-weight: 700;
+    }
+}
+
+.count {
+    p {
+        font-size: 4rem;
+        font-weight: 700;
+        text-align: center;
+        color: $white;
+    }
+    span {
+        display: block;
+        font-size: 1rem;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: .4rem;
+    }
+}
+
+.today_count {
+    p {
+        display: inline-block;
+        margin-left: .4rem;
+        font-weight: 600;
+    }
+}
+
+.today_count_fb {
+    color: $white;
+}
+
+.increase_clr {
+    color: $green !important;
+}
+.decrease_clr {
+    color: $red !important;
+}
+
+.twitter_followers {
+    @include card_border($twitter);
+}
+
+.instagram_followers {
+    @include card_border(transparent);
+    border-image: linear-gradient(90deg, $instagram_grad_left , $instagram_grad_right);
+    border-image-slice: 1;
+}
+
+.yt_followers {
+    @include card_border($youTube);
+}
+
+.second_section {
+    position: absolute;
+    top: 80rem;
+    color: $dark_theme_text;
+    padding: 2rem;
+    h1 {
+        color: $white;
+        width: 100%;
+    }
+}
+
+.social_med_stats {
+    margin-top: 1rem;
+}
+
+.item_top {
+    margin-bottom: 1rem;
+    p {
+        font-weight: 600;
+    }
+}
+
+.item_bottom {
+    p {
+        color: $white;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    div p {
+        font-size: 1rem;
+        margin-left: .3rem;
+    }
+}
+
+@media (min-width: 950px) {
+
+    .title_and_toggle {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .toggle_btn {
+        width: 10rem;
+        color: $white;
+    }
+    
+    .title {
+        border: none;
+        width: 50%;
+    }
+
+    .second_section {
+        top: 25rem;
+    }
+
+    .followers_count,
+    .social_med_stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    }
+}

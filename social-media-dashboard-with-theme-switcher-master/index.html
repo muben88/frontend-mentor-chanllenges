@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/dist/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="bg_top"></div>
+      <div class="first_section">
+        <div class="title_and_toggle">
+          <div class="title">
+            <h1 id="card-text-black">Social Media Dashboard</h1>
+            <p id="card-text-grey">Total Followers: 23,004</p>
+          </div>
+          <div class="toggle_btn">
+            <p id="card-text-grey">Dark Mode</p>
+            <label>
+              <input type="checkbox">
+              <span></span>
+            </label>
+          </div>
+        </div>
+        <div class="followers_count">
+          <div class="facebook_followers" id="card_block">
+            <div class="profile_name">
+              <img src="images/icon-facebook.svg" alt="facebook logo">
+              <p>@nathanf</p>
+            </div>
+            <div class="count">
+              <p id="card-text-black">1987 <span id="card-text-grey">Followers</span></p>
+            </div>
+            <div class="today_count today_count_fb">
+              <img src="images/icon-up.svg" alt="arrow up">
+              <p id="fb_count">12 Today</p>
+            </div>
+          </div>
+
+          <div class="twitter_followers" id="card_block">
+            <div class="profile_name">
+              <img src="images/icon-twitter.svg" alt="twitter logo">
+              <p>@nathanf</p>
+            </div>
+            <div class="count">
+              <p id="card-text-black">1044 <span id="card-text-grey">Followers</span></p>
+            </div>
+            <div class="today_count increase_clr">
+              <img src="images/icon-up.svg" alt="arrow up">
+              <p>99 Today</p>
+            </div>
+          </div>
+
+          <div class="instagram_followers" id="card_block">
+            <div class="profile_name">
+              <img src="images/icon-instagram.svg" alt="instagram logo">
+              <p>@realnathanf</p>
+            </div>
+            <div class="count">
+              <p id="card-text-black">11k <span id="card-text-grey">Followers</span></p>
+            </div>
+            <div class="today_count increase_clr">
+              <img src="images/icon-up.svg" alt="arrow up">
+              <p>1099 Today</p>
+            </div>
+          </div>
+
+          <div class="yt_followers" id="card_block">
+            <div class="profile_name">
+              <img src="images/icon-youtube.svg" alt="instagram logo">
+              <p>Nathan F.</p>
+            </div>
+            <div class="count">
+              <p id="card-text-black">8239 <span id="card-text-grey">Subscribers</span></p>
+            </div>
+            <div class="today_count decrease_clr">
+              <img src="images/icon-down.svg" alt="arrow down">
+              <p>144 Today</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="second_section">
+        <h1 id="card-text-black">Overview - Today</h1>
+        <div class="social_med_stats">
+
+          <div class="item" id="card_block">
+            <div class="item_top">
+              <p id="card-text-grey">Page Views</p>
+              <img src="images/icon-facebook.svg" alt="fb icon">
+            </div>
+            <div class="item_bottom">
+              <p id="card-text-black">87</p>
+              <div class="grow_percentage">
+                <img src="images/icon-up.svg" alt="arrow up">
+                <p class="increase_clr">3%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" id="card_block">
+            <div class="item_top">
+              <p id="card-text-grey">Likes</p>
+              <img src="images/icon-facebook.svg" alt="fb icon">
+            </div>
+            <div class="item_bottom">
+              <p id="card-text-black">52</p>
+              <div class="grow_percentage">
+                <img src="images/icon-down.svg" alt="arrow down">
+                <p class="decrease_clr">2%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" id="card_block">
+            <div class="item_top">
+            <p id="card-text-grey">Likes</p>
+              <img src="images/icon-instagram.svg" alt="ig icon">
+            </div>
+            <div class="item_bottom">
+              <p id="card-text-black">5462</p>
+              <div class="grow_percentage">
+                <img src="images/icon-up.svg" alt="arrow up">
+                <p class="increase_clr">2257%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" id="card_block">
+            <div class="item_top">
+              <p id="card-text-grey">Profile Views</p>
+              <img src="images/icon-instagram.svg" alt="ig icon">
+            </div>
+            <div class="item_bottom">
+              <p id="card-text-black">52k</p>
+              <div class="grow_percentage">
+                <img src="images/icon-up.svg" alt="arrow up">
+                <p class="increase_clr">1375%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" id="card_block">
+            <div class="item_top">
+              <p id="card-text-grey">Retweets</p>
+              <img src="images/icon-twitter.svg" alt="twitter icon">
+            </div>
+            <div class="item_bottom">
+              <p id="card-text-black">117</p>
+              <div class="grow_percentage">
+                <img src="images/icon-up.svg" alt="arrow up">
+                <p class="increase_clr">303%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" id="card_block">
+            <div class="item_top">
+              <p id="card-text-grey">Likes</p>
+              <img src="images/icon-twitter.svg" alt="twitter icon">
+            </div>
+            <div class="item_bottom">
+              <p id="card-text-black">507</p>
+              <div class="grow_percentage">
+                <img src="images/icon-up.svg" alt="arrow up">
+                <p class="increase_clr">553%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" id="card_block">
+            <div class="item_top">
+              <p id="card-text-grey">Likes</p>
+              <img src="images/icon-youtube.svg" alt="youtube icon">
+            </div>
+            <div class="item_bottom">
+              <p id="card-text-black">107</p>
+              <div class="grow_percentage">
+                <img src="images/icon-down.svg" alt="arrow down">
+                <p class="decrease_clr">19%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" id="card_block">
+            <div class="item_top">
+              <p id="card-text-grey">Total Views</p>
+              <img src="images/icon-youtube.svg" alt="youtube icon">
+            </div>
+            <div class="item_bottom">
+              <p id="card-text-black">1407</p>
+              <div class="grow_percentage">
+                <img src="images/icon-down.svg" alt="arrow down">
+                <p class="decrease_clr">12%</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
