@@ -1,0 +1,120 @@
+@import 'variables';
+@import 'globals';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $bg_main;
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+main {
+    width: 100%;
+    padding: 2rem;
+    height: 100vh;
+}
+
+.container {
+    background-color: $bg_card;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: min(23rem);
+}
+
+.icon_star {
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba($medium_grey, 0.2);
+    border-radius: 50%;
+}
+
+h1 {
+    color: $white;
+    margin: 1rem 0;
+}
+
+p {
+    color: $medium_grey;
+    line-height: 1.5;
+}
+
+.ratings {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.rating_btn {
+    width: 3rem;
+    height: 3rem;
+    @include set($light_grey, rgba($medium_grey, 0.2), 50%);
+}
+
+.submit_btn {
+    width: 100%;
+    padding: 1rem 0;
+    @include set($white, $orange, 5rem);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.rating_btn:hover {
+    background-color: $light_grey;
+    color: $white;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.submit_btn:hover {
+    cursor: pointer;
+    background-color: $white;
+    color: $orange;
+    transition: .2s ease-in;
+}
+
+.active_button {
+    background-color: $orange;
+    color: $white;    
+}
+
+.hide_section {
+    display: none;
+}
+
+.thank_you_page {
+    text-align: center;
+    padding: 3rem 2rem;
+
+    img {
+        display: block;
+    }
+
+    div {
+        margin: 1rem;
+    }
+}
+
+.thanks_rating {
+    background-color: rgba($medium_grey, 0.2);
+    padding: .5rem 1rem;
+    border-radius: 4rem;
+    p {
+        color: rgba($orange, .8);
+    }
+}
+
+.attribution a {
+    text-decoration: none;
+    color: $orange;
+}
+
+.attribution a:hover {
+    color: $white;
+}

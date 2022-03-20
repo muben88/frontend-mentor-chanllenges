@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="dist/styles.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+
+  <main>
+    <div class="rate_us container">
+      <div class="icon_star">
+        <img src="images/icon-star.svg" alt="icon star">
+      </div>
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+      <div class="ratings">
+        <button class="rating_btn" value="1" id="rate_1">1</button>
+        <button class="rating_btn" value="2" id="rate_2">2</button>
+        <button class="rating_btn" value="3" id="rate_3">3</button>
+        <button class="rating_btn" value="4" id="rate_4">4</button>
+        <button class="rating_btn" value="5" id="rate_5">5</button>
+      </div>
+      <button class="submit_btn">Submit</button>
+    </div>
+
+    <div class="thank_you_page container hide_section">
+      <img src="images/illustration-thank-you.svg" alt="thank you illustration">
+      <div class="thanks_rating">
+        <p>You selected <span id="rating">5</span> out of 5</p>
+      </div>
+      <h1>Thank you!</h1>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</p>
+    </div>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://nakoyawilson.netlify.app/">Mustapha Ben</a>.
+    </p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

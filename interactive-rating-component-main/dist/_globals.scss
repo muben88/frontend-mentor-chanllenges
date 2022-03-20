@@ -1,0 +1,18 @@
+main,
+.icon_star,
+.thank_you_page,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin set($clr, $bgClr, $borderRad) {
+    color: $clr;
+    background-color: $bgClr;
+    border-radius: $borderRad;
+    border-style: none;
+    font-size: 1rem;
+    font-weight: 600;
+}

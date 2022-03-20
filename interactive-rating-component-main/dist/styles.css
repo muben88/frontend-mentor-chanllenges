@@ -1,0 +1,160 @@
+main,
+.icon_star,
+.thank_you_page,
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121417;
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+}
+
+main {
+  width: 100%;
+  padding: 2rem;
+  height: 100vh;
+}
+
+.container {
+  background-color: #252d37;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 23rem;
+}
+
+.icon_star {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(124, 135, 152, 0.2);
+  border-radius: 50%;
+}
+
+h1 {
+  color: white;
+  margin: 1rem 0;
+}
+
+p {
+  color: #7c8798;
+  line-height: 1.5;
+}
+
+.ratings {
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.rating_btn {
+  width: 3rem;
+  height: 3rem;
+  color: #959eac;
+  background-color: rgba(124, 135, 152, 0.2);
+  border-radius: 50%;
+  border-style: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.submit_btn {
+  width: 100%;
+  padding: 1rem 0;
+  color: white;
+  background-color: #fb7413;
+  border-radius: 5rem;
+  border-style: none;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.rating_btn:hover {
+  background-color: #959eac;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+}
+
+.submit_btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #fb7413;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+}
+
+.active_button {
+  background-color: #fb7413;
+  color: white;
+}
+
+.hide_section {
+  display: none;
+}
+
+.thank_you_page {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.thank_you_page img {
+  display: block;
+}
+
+.thank_you_page div {
+  margin: 1rem;
+}
+
+.thanks_rating {
+  background-color: rgba(124, 135, 152, 0.2);
+  padding: .5rem 1rem;
+  border-radius: 4rem;
+}
+
+.thanks_rating p {
+  color: rgba(251, 116, 19, 0.8);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #fb7413;
+}
+
+.attribution a:hover {
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */
