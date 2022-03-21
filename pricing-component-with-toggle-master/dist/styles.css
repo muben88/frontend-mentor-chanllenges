@@ -11,7 +11,7 @@ body {
   font-size: 15px;
   font-weight: 700;
   background-color: #f6f6fe;
-  background-image: url(/images/bg-top.svg);
+  background-image: url(images/bg-top.svg);
   background-repeat: no-repeat;
   background-position: top right -13rem;
   background-size: auto;
@@ -231,7 +231,7 @@ footer {
 
 @media (min-width: 750px) {
   body {
-    background-image: url(/images/bg-top.svg), url(/images/bg-bottom.svg);
+    background-image: url(images/bg-top.svg), url(images/bg-bottom.svg);
     background-repeat: no-repeat;
     background-position: top right, bottom left;
   }
