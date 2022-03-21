@@ -24,7 +24,7 @@ submitBtn.addEventListener('click', () => {
 
 
 const clicked = (item1, item2, item3, item4, item5) => {
-    item1.classList.toggle('active_button');
+    item1.classList.add('active_button');
     item2.classList.remove('active_button');
     item3.classList.remove('active_button');
     item4.classList.remove('active_button');
