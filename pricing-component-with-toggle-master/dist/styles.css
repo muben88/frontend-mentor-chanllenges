@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #f6f6fe;
+  background-image: url(/images/bg-top.svg);
+  background-repeat: no-repeat;
+  background-position: top right -13rem;
+  background-size: auto;
+}
+
+.container,
+.toggle,
+.plan_price,
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 5rem 0 0 0;
+}
+
+.page_title {
+  color: #494c5f;
+}
+
+.toggle {
+  margin: 2rem 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.toggle p {
+  color: #6d708d;
+}
+
+.toggle_btn {
+  margin: 0 1rem;
+}
+
+.toggle_btn label {
+  position: relative;
+  display: inline-block;
+  width: 3.5rem;
+  height: 2rem;
+}
+
+.toggle_btn input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle_btn span {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(90deg, #a3a8f0, #696fdd);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 2rem;
+}
+
+.toggle_btn span:hover {
+  opacity: .7;
+}
+
+.toggle_btn span:before {
+  position: absolute;
+  content: "";
+  height: 1.5rem;
+  width: 1.5rem;
+  left: .25rem;
+  bottom: .25rem;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.toggle_btn input:checked + span {
+  background-color: #2196F3;
+}
+
+.toggle_btn input:checked + span:before {
+  -webkit-transform: translateX(1.5rem);
+          transform: translateX(1.5rem);
+}
+
+.plans {
+  width: 100%;
+  padding: 1rem;
+}
+
+.basic,
+.professional,
+.master {
+  width: 100%;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+}
+
+.basic div,
+.professional div,
+.master div {
+  border-top: 1px solid #b3b5c6;
+  margin: 2rem 0;
+}
+
+.basic div p,
+.professional div p,
+.master div p {
+  font-size: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #b3b5c6;
+}
+
+.basic button,
+.professional button,
+.master button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: .3rem;
+}
+
+.basic button:hover,
+.professional button:hover,
+.master button:hover {
+  background: transparent;
+  cursor: pointer;
+}
+
+.basic,
+.master {
+  background-color: #fff;
+}
+
+.basic p,
+.master p {
+  color: #6d708d;
+}
+
+.basic button,
+.master button {
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(90deg, #a3a8f0, #696fdd);
+  border: 1px solid #fff;
+}
+
+.basic button:hover,
+.master button:hover {
+  color: #696fdd;
+  border: 1px solid #696fdd;
+}
+
+.professional {
+  background: linear-gradient(110deg, #a3a8f0, #696fdd);
+}
+
+.professional p {
+  color: #fff;
+}
+
+.professional .plan_name,
+.professional .plan_price {
+  color: #fff;
+}
+
+.professional button {
+  color: #696fdd;
+  background: #fff;
+  border: 1px solid #fff;
+}
+
+.professional button:hover {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.plan_name,
+.plan_price {
+  color: #494c5f;
+}
+
+.plan_name {
+  font-size: 1.5rem;
+}
+
+.plan_price {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.plan_price span {
+  font-size: 3rem;
+}
+
+@media (min-width: 750px) {
+  body {
+    background-image: url(/images/bg-top.svg), url(/images/bg-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: top right, bottom left;
+  }
+  .plans {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    width: 75%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 2rem;
+  }
+  .professional {
+    padding: 3rem 1.5rem;
+  }
+  .basic {
+    border-radius: 1rem 0 0 1rem;
+  }
+  .master {
+    border-radius: 0 1rem 1rem 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
