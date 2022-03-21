@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import "variables";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: $bg;
+    background-image: url(/images/bg-top.svg);
+    background-repeat: no-repeat;
+    background-position: top right -13rem;
+    background-size: auto;
+}
+
+.container,
+.toggle,
+.plan_price,
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+.container {
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem 0 0 0;
+}
+
+.page_title {
+    color: $main_txt;
+}
+
+.toggle {
+    margin: 2rem 0;
+    flex-direction: row;
+    p {
+        color: $text;
+    }
+}
+
+.toggle_btn {
+    margin: 0 1rem;
+
+    label {
+        position: relative;
+        display: inline-block;
+        width: 3.5rem;
+        height: 2rem;
+    }
+
+    input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    span {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(90deg, $gradient_left, $gradient_right);
+        transition: .4s;
+        border-radius: 2rem;
+      }
+
+      span:hover {
+          opacity: .7;
+      }
+      
+      span:before {
+        position: absolute;
+        content: "";
+        height: 1.5rem;
+        width: 1.5rem;
+        left: .25rem;
+        bottom: .25rem;
+        background-color: white;
+        transition: .4s;
+        border-radius: 50%;
+      }
+      
+      input:checked + span {
+        background-color: #2196F3;
+      }
+      
+      input:checked + span:before {
+        transform: translateX(1.5rem);
+      }
+}
+
+.plans {
+    width: 100%;
+    padding: 1rem;
+}
+
+.basic,
+.professional,
+.master {
+    width: 100%;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+
+    div {
+        border-top: $border;
+        margin: 2rem 0;
+
+        p {
+            font-size: 1rem;
+            padding: 1rem 0;
+            border-bottom: $border;
+        }
+    }
+
+    button {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border-radius: .3rem;
+    }
+
+    button:hover {
+        background: transparent;
+        cursor: pointer;
+    }
+}
+
+.basic,
+.master {
+    background-color: #fff;
+    p {
+        color: $text;
+    }
+    button {
+        color: #fff;
+        background: linear-gradient(90deg, $gradient_left, $gradient_right);
+        border: 1px solid #fff;
+    }
+
+    button:hover {
+        color: $gradient_right;
+        border: 1px solid $gradient_right;
+    }
+}
+
+.professional {
+    background: linear-gradient(110deg, $gradient_left, $gradient_right);
+    p {
+        color: #fff;
+    }
+    .plan_name,
+    .plan_price {
+    color: #fff;
+}
+    button {
+        color: $gradient_right;
+        background: #fff;
+        border: 1px solid #fff;
+    }
+
+    button:hover {
+        color: #fff;
+        border: 1px solid #fff;
+    }
+}
+
+
+.plan_name,
+.plan_price {
+    color: $main_txt;
+}
+
+.plan_name {
+    font-size: 1.5rem;
+}
+
+.plan_price {
+    font-size: 2rem;
+    margin: 1rem 0;
+    span {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 750px) {
+
+    body {
+        background-image: url(/images/bg-top.svg), url(/images/bg-bottom.svg);
+        background-repeat: no-repeat;
+        background-position: top right, bottom left;
+    }
+
+    .plans {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 75%;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+
+    .professional {
+        padding: 3rem 1.5rem;
+    }
+
+    .basic {
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .master {
+        border-radius: 0 1rem 1rem 0;
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="dist/styles.css">
+  
+  <title>Frontend Mentor | Pricing Panel</title>
+
+</head>
+<body>
+  <main>
+    <div class="container">
+      <h1 class="page_title">Our Pricing</h1>
+      <div class="toggle">
+        <p>Annually</p>
+        <div class="toggle_btn">
+          <label>
+            <input type="checkbox">
+            <span></span>
+          </label>
+        </div>
+        <p>Monthly</p>
+      </div>
+      <div class="plans">
+        <div class="basic">
+          <p class="plan_name">Basic</p>
+          <p class="plan_price">&dollar;<span id="basic-price">199.99</span></p>
+          <div>
+            <p>500 GB Storage</p>
+            <p>2 Users Allowed</p>
+            <p>Send up to 3 GB</p>
+          </div>
+          <button>Learn More</button>
+        </div>
+        <div class="professional">
+          <p class="plan_name">Professional</p>
+          <p class="plan_price">&dollar;<span id="professional-price">249.99</span></p>
+          <div>
+            <p>1 TB Storage</p>
+            <p>5 Users Allowed</p>
+            <p>Send up to 10 GB</p>
+          </div>
+          <button>Learn More</button>
+        </div>
+        <div class="master">
+          <p class="plan_name">Master</p>
+          <p class="plan_price">&dollar;<span id="master-price">399.99</span></p>
+          <div>
+            <p>2 TB Storage</p>
+            <p>10 Users Allowed</p>
+            <p>Send up to 20 GB</p>
+          </div>
+          <button>Learn More</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Mustapha Ben</a>.
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
